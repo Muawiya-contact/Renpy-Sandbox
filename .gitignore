@@ -1,0 +1,16 @@
+# Ren'Py Compiled files (These change every time you run the game)
+*.rpyc
+*.pyo
+*.rpymc
+
+# Saves and Cache (You don't want your personal save games on GitHub)
+game/saves/
+game/cache/
+
+# System/Engine folders (If you want to keep your repo light)
+# Only use this if 'renpy/' is a subfolder in your repo
+renpy/
+
+# Operating System files
+Thumbs.db
+.DS_Store
