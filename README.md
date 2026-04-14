@@ -10,7 +10,6 @@
    ```
    Or directly with Ren'Py launcher
 
-
 ## Project Structure
 
 - `game/` - Your game scripts and assets
