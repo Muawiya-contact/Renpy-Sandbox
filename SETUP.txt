@@ -1,0 +1,72 @@
+SETUP GUIDE - MyGame (Ren'Py Visual Novel)
+=============================================
+
+YOUR GAME IS READY!
+
+The issue you encountered:
+  The Ren'Py SDK you downloaded (renpy-8.5.2-sdk.7z.exe) is just an installer
+  stub. It needs to extract the FULL SDK with compiled libraries.
+
+SOLUTION - Choose ONE:
+
+OPTION 1: Use Ren'Py Launcher (EASIEST)
+----------------------------------------
+1. Go to: https://www.renpy.org/latest.html
+2. Download: "Ren'Py 8.5.2 (Your System)"
+   - Windows: "Windows (x86_64)"
+   - Mac: "macOS (Intel)" or "macOS (Apple)"
+   - Linux: "Linux (x86_64)"
+
+3. RUN the Ren'Py launcher you downloaded
+4. In launcher, click: Browse...
+5. Select: C:\Users\4s bazzar\OneDrive\Desktop\Open Source\MyGame
+6. Click: Launch Project
+
+YOUR GAME WILL START!
+
+OPTION 2: Extract Full SDK Here
+--------------------------------
+1. Download from https://www.renpy.org/latest.html
+   Get: "Ren'Py (Full SDK)" or the Windows installer EXE
+
+2. Install/Extract it completely (not just renpy-8.5.2-sdk.7z.exe)
+   
+3. Copy the extracted "renpy" folder to:
+   MyGame/renpy/
+   
+   Result should be:
+   MyGame/
+   ├── renpy/
+   │   ├── renpy/        (engine code)
+   │   ├── launcher/     (the launcher)
+   │   └── lib/          (compiled libraries)
+   └── game/
+
+4. Then run: python Setup.py
+
+GAME FILES:
+-----------
+- game/script.rpy    = Your story script (edit this!)
+- game/options.rpy   = Game settings
+- renpy/             = Engine (leave as-is)
+
+EDIT YOUR STORY:
+----------------
+Open game/script.rpy and add your story:
+
+    label start:
+        "Welcome to MyGame!"
+        
+        menu:
+            "Choice 1":
+                "You picked 1"
+            "Choice 2":
+                "You picked 2"
+        
+        return
+
+HELP:
+-----
+- Ren'Py Docs: https://www.renpy.org/doc/html/
+- Forums: https://lemmasoft.renai.us/forums/
+- Tutorial: Built into Ren'Py launcher
